@@ -5,6 +5,8 @@
   --botton-bg: #4c9c7031;
   --botton-color: #33c675;
   --botton-hover: #33c6753c;
+  --landing-page-para: #409566;
+  --overlay: #00000071;
 }
 *{
   margin: 0;
@@ -14,13 +16,16 @@
 body{
   background-color: var(--theme);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* overflow: hidden; */
 }
 /* nav bar styles */
 header{
   color: #24ae63;
-  font-size: 20px;
-  background-color: var(--header-bg);
-  padding: 1rem 0;  
+  font-size: 18px;
+  background-color: var(--header-bg); 
+}
+header img{
+  padding: 0.1rem;
 }
 header nav{
   display: flex;
@@ -51,7 +56,7 @@ header nav ul li::after{
 header nav ul li:hover::after{
   width: 100%;
 }
-.lets-talk button{
+.lets-talk button, .right-cont button{
   font-size: 15px;
   padding: 12px 20px;
   color:var(--botton-color);
@@ -60,7 +65,65 @@ header nav ul li:hover::after{
   border: 1px solid var(--green);
   border-radius: 10px;
 }
-.lets-talk button:hover{
+.lets-talk button:hover,.right-cont button:hover{
   background-color: var(--botton-hover);
   cursor: pointer;
 }
+/* styling the hero section */
+main  .hero-img{
+  height: 90vh;
+  width: 100%;
+  background-image: url(images/hero-logo.jpg);
+  background-size: cover;
+  background-position: 0%;
+  position: relative;
+}
+main{
+  color: var(--green);
+}
+main .h1 span{
+  display: inline-block;
+}
+main .inner-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  gap: 9rem;
+}
+main .inner-cont .left-cont{
+  width: 190rem;
+}
+main .inner-cont .left-cont h3{
+  font-weight: 400;
+  font-size: 2rem;
+}
+main .inner-cont .left-cont .h1 span{
+  font-size: 6.5rem;
+  font-weight: 400;
+}
+main .inner-cont .right-cont p{
+  font-size: 20px;
+  line-height: 1.7rem;
+  position: relative;
+  color: var(--landing-page-para);
+
+}
+main .hero-img .overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--overlay);
+}
+.right-cont button{
+  width: 100%;
+  margin-top: 2rem;
+}
+.right-cont button a{
+  text-decoration: none;
+  color: var(--botton-color);
+  font-size: 18px;
+}
+/* styling skills section */
