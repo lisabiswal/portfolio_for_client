@@ -42,44 +42,45 @@ function skillAnimation(){
       trigger: ".all-skills",
       scroller: "body",
       // markers: true,
-      start: "top 45%",
+      start: "top 80%",
       end: "top 0%",
       scrub: 2,
     }
   })
 
   tlForSkills.from(".all-skills h1",{
-    opacity: 0
+    opacity: 0,
+    duration: 0.2
   })
   
   tlForSkills.from(".skill1",{
-    y: 50,
-    duration: 1,
+    y: 100,
+    duration: 2,
     opacity: 0
   },"anim1")
   tlForSkills.from(".skill2",{
-    x: 50,
-    duration: 1,
+    x: 100,
+    duration: 2,
     opacity: 0
   },"anim1")
   tlForSkills.from(".skill3",{
-    x: -50,
-    duration: 1,
+    x: -100,
+    duration: 2,
     opacity: 0
   },"anim2")
   tlForSkills.from(".skill4",{
-    y: 50,
-    duration: 1,
+    y: 100,
+    duration: 2,
     opacity: 0
   },"anim2")
   tlForSkills.from(".skill5",{
-    y: 50,
-    duration: 1,
+    y: 100,
+    duration: 2,
     opacity: 0
   },"anim3")
   tlForSkills.from(".skill6",{
-    x: 50,
-    duration: 1,
+    x: 100,
+    duration: 2,
     opacity: 0
   },"anim3")
 }  
