@@ -36,3 +36,51 @@ tl.from(".right-cont button",{
 }
 landingPageAnim()
 
+function skillAnimation(){
+  let tlForSkills = gsap.timeline({
+    scrollTrigger:{
+      trigger: ".all-skills",
+      scroller: "body",
+      // markers: true,
+      start: "top 45%",
+      end: "top 0%",
+      scrub: 2,
+    }
+  })
+
+  tlForSkills.from(".all-skills h1",{
+    opacity: 0
+  })
+  
+  tlForSkills.from(".skill1",{
+    y: 50,
+    duration: 1,
+    opacity: 0
+  },"anim1")
+  tlForSkills.from(".skill2",{
+    x: 50,
+    duration: 1,
+    opacity: 0
+  },"anim1")
+  tlForSkills.from(".skill3",{
+    x: -50,
+    duration: 1,
+    opacity: 0
+  },"anim2")
+  tlForSkills.from(".skill4",{
+    y: 50,
+    duration: 1,
+    opacity: 0
+  },"anim2")
+  tlForSkills.from(".skill5",{
+    y: 50,
+    duration: 1,
+    opacity: 0
+  },"anim3")
+  tlForSkills.from(".skill6",{
+    x: 50,
+    duration: 1,
+    opacity: 0
+  },"anim3")
+}  
+skillAnimation()

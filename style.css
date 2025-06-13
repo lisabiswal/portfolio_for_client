@@ -21,6 +21,7 @@ body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /* overflow: hidden; */
 }
+
 /* nav bar styles */
 header{
   color: #24ae63;
@@ -72,6 +73,7 @@ header nav ul li:hover::after{
   background-color: var(--botton-hover);
   cursor: pointer;
 }
+
 /* styling the hero section */
 main  .hero-img{
   height: 90vh;
@@ -129,12 +131,11 @@ main .hero-img .overlay{
   color: var(--botton-color);
   font-size: 18px;
 }
-/* styling skills section */
 
+/* styling skills section */
 .all-skills{
   margin: 5rem 0;
 }
-
 .skill{
   height: 12rem;
   width: 30rem;
@@ -153,7 +154,19 @@ main .hero-img .overlay{
   flex-wrap: wrap;
   width: 75%;
   margin: 0 auto;
-
+}
+.all-skills h1{
+  text-align: center;
+  color: var(--green);
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+.all-skills .underline{
+  width: 25rem;
+  height: 0.4px;
+  background: var(--botton-color);
+  margin: 0 auto;
+  margin-bottom: 3rem;
 }
 .skill h2{
   color: var(--skill-heading);
