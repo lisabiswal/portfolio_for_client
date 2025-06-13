@@ -7,6 +7,9 @@
   --botton-hover: #33c6753c;
   --landing-page-para: #409566;
   --overlay: #00000071;
+  --skill-para: #1d9a558c;
+  --skill-heading: #6cb68d;
+  --skill-border: #135a33;
 }
 *{
   margin: 0;
@@ -127,3 +130,47 @@ main .hero-img .overlay{
   font-size: 18px;
 }
 /* styling skills section */
+
+.all-skills{
+  margin: 5rem 0;
+}
+
+.skill{
+  height: 12rem;
+  width: 30rem;
+  /* background-color:#052b085e; */
+  background-color: var(--theme);
+  box-shadow: 0 0 6px var(--skill-border);
+  border-radius: 20px;
+  padding: 20px;
+  /* border:1px solid var(--green); */
+}
+.skills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: 0 auto;
+
+}
+.skill h2{
+  color: var(--skill-heading);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.skill p{
+  color: var(--skill-para);
+  line-height: 1.5rem;
+  font-size: 18px;
+}
+.skill1, .skill4,.skill5{
+  border-bottom: 2px solid var(--green);
+}
+.skill2,.skill6{
+  border-left: 2px solid var(--green);
+}
+.skill3{
+  border-right: 2px solid var(--green);
+}
