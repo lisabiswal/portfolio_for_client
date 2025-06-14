@@ -51,15 +51,16 @@ function skillAnimation(){
     }
   })
 
-  tlForSkills.from(".all-skills h1",{
-    opacity: 0,
-    duration: 0.2
-  })
+  // tlForSkills.from(".all-skills h1",{
+  //   opacity: 0,
+  //   duration: 0.2
+  // })
+  
   
   tlForSkills.from(".skill1",{
     y: 100,
     duration: 2,
-    opacity: 0
+    opacity: 0,
   },"anim1")
   tlForSkills.from(".skill2",{
     x: 100,
@@ -68,23 +69,27 @@ function skillAnimation(){
   },"anim1")
   tlForSkills.from(".skill3",{
     x: -100,
-    duration: 2,
-    opacity: 0
+    duration: 3,
+    opacity: 0,
+    delay:1.5
   },"anim2")
   tlForSkills.from(".skill4",{
     y: 100,
-    duration: 2,
-    opacity: 0
+    duration: 3,
+    opacity: 0,
+     delay:1.5
   },"anim2")
   tlForSkills.from(".skill5",{
     y: 100,
     duration: 2,
-    opacity: 0
+    opacity: 0,
+    delay: 1.5
   },"anim3")
   tlForSkills.from(".skill6",{
     x: 100,
     duration: 2,
-    opacity: 0
+    opacity: 0,
+    delay: 1.5
   },"anim3")
 }  
 skillAnimation()
@@ -152,3 +157,7 @@ function certiAnim(){
   })
 }  
 certiAnim()
+
+// animating the form section
+
+

@@ -18,24 +18,31 @@
         <div class="underline"></div>
         <div class="inner-cont">
     
-          <form action="">
+          <form action="https://formspree.io/f/mjkrrgbw"
+  method="POST">
             <div class="first-last-names">
               <input type="text" name="firstName" placeholder="Enter your first name" required>
               <input type="text" name="lastName" placeholder="Enter your Last name" required>
             </div>
             <div class="email-phone">
               <input type="email" name="email" placeholder="Enter your email" required>
-              <input type="number" name="phone" placeholder="Enter your phone number" required>
+              <input type="number" name="phone" maxlength="10" placeholder="Enter your phone number" required>
             </div>
             <div class="message">
               <textarea name="msg" id="msg" placeholder="Leave a message for chaitanya..."></textarea>
             </div>
-            <button class="btn">Submit</button>
+            <input type="hidden" name="_subject" value="New message from your PORTFOLIO">
+            <button class="btn" type="submit">Submit</button>
           </form>
         </div>
     
       </section>
     </div>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+    integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="cont.js"></script>
 </body>
 </html>

@@ -21,12 +21,20 @@ body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /* overflow: hidden; */
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 /* nav bar styles */
 header{
   color: #24ae63;
   font-size: 18px;
   background-color: var(--header-bg); 
+}
+header nav ul li a{
+  color: var(--green);
+  text-decoration: none;
 }
 header img{
   padding: 0.1rem;
@@ -308,4 +316,41 @@ form input::placeholder, textarea::placeholder{
 }
 .contact-page{
   margin-top: 8rem;
+}
+
+/* styling footer  */
+footer{
+  height: 20rem;
+
+  background-color: rgba(5, 50, 5, 0.384);
+  
+}
+.flex-foot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  color: rgb(106, 249, 106);
+  
+}
+.inner-foot h1,.inner-foot p{
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+.inner-foot h1{
+  font-weight: 400;
+}
+.inner-foot p{
+  color: rgb(54, 173, 54);
+}
+.inner-foot p a{
+  color: rgb(100, 205, 100);
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 2.5rem;
+}
+.inner-foot{
+  margin-top: 5rem;
+  font-size: 1.5rem;
 }
