@@ -3,7 +3,7 @@
   --green: #24ae63;
   --header-bg: #202534;
   --botton-bg: #4c9c7031;
-  --botton-color: #33c675;
+  --botton-color: #75f8b0;
   --botton-hover: #33c6753c;
   --landing-page-para: #409566;
   --overlay: #00000071;
@@ -73,6 +73,10 @@ header nav ul li:hover::after{
   background-color: var(--botton-hover);
   cursor: pointer;
 }
+.lets-talk a{
+  text-decoration: none;
+  color: var(--botton-color);
+}
 
 /* styling the hero section */
 main  .hero-img{
@@ -125,6 +129,10 @@ main .hero-img .overlay{
 .right-cont button{
   width: 100%;
   margin-top: 2rem;
+  background-color: rgba(0, 128, 0, 0.319);
+}
+.right-cont button:hover{
+  background-color: rgba(19, 70, 19, 0.503);
 }
 .right-cont button a{
   text-decoration: none;
@@ -133,7 +141,7 @@ main .hero-img .overlay{
 }
 
 /* styling skills section */
-.all-skills{
+.all-skills,.all-certificates{
   margin: 5rem 0;
 }
 .skill{
@@ -155,13 +163,13 @@ main .hero-img .overlay{
   width: 75%;
   margin: 0 auto;
 }
-.all-skills h1{
+.all-skills h1, .all-certificates h1,.contact h1{
   text-align: center;
   color: var(--green);
   font-size: 2.3rem;
   font-weight: 400;
 }
-.all-skills .underline{
+.all-skills .underline, .all-certificates .underline, .contact .underline{
   width: 25rem;
   height: 0.4px;
   background: var(--botton-color);
@@ -186,4 +194,118 @@ main .hero-img .overlay{
 }
 .skill3{
   border-right: 2px solid var(--green);
+}
+
+/* styling the certificate section */
+
+.flex-certi{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+  gap: 20px;
+}
+.certi{
+  border-radius: 20px;
+  position: relative;
+}
+.certi{
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.certi:nth-child(even) .screen1{
+  height: 14rem;
+  width: 100%;
+  background-color: #134f2e2f;
+  position: absolute;
+  top: 0;
+  border-bottom: 1pc solid #1f6e43a6;
+  backdrop-filter: blur(5px);
+  
+}
+.certi:nth-child(odd) .screen1{
+  height: 14rem;
+  width: 100%;
+  background-color: #134f2e2f;
+  position: absolute;
+  bottom: 0;
+  border-top: 1pc solid #1f6e43a6;
+  backdrop-filter: blur(5px);
+}
+
+/* styling contact section */
+
+.contact .inner-cont{
+  width: 50%;
+  height: auto;
+  /* background-color: #24ae63; */
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+.first-last-names,.email-phone{
+  display: flex;
+  gap: 10px;
+}
+.first-last-names input,.email-phone input, .message textarea{
+  width: 100%;
+  height: 4rem;
+  margin: 5px;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #27513a65;
+  outline: none;
+  border: none;
+  border: 2px solid rgb(5, 186, 5);
+  backdrop-filter: blur(5px);
+  color: rgb(212, 250, 213);
+
+} 
+.message textarea{
+  height: 7rem;
+}
+.inner-cont .btn{
+  width: 100%;
+  height: 3rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  background-color: rgba(71, 238, 71, 0.281);
+  border: 1px solid rgb(8, 224, 8);
+  font-size: 19px;
+  color: rgb(238, 235, 235);
+  letter-spacing: 0.1rem;
+}
+form input::placeholder, textarea::placeholder{
+  color: rgb(165, 243, 165);
+}
+.inner-cont .btn:hover{
+  cursor: pointer;
+  background-color: rgba(0, 128, 0, 0.425);
+
+}
+.contact-bg{
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/contact_page_bg.jpg");
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  z-index: -111;
+}
+.contact-bg-overlay{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.567);
+  top: 0;
+}
+.contact{
+  position: relative;
+  z-index: 111;
+  
+}
+.contact-page{
+  margin-top: 8rem;
 }

@@ -1,3 +1,4 @@
+// splitting the words
 function splitWords(){
   let h1 = document.querySelector(".h1")
   let h1Text = h1.textContent
@@ -13,6 +14,7 @@ function splitWords(){
 }
 splitWords()
 
+// animating landing page
 function landingPageAnim(){
   let tl = gsap.timeline()
 
@@ -36,13 +38,14 @@ tl.from(".right-cont button",{
 }
 landingPageAnim()
 
+// animating skills sectio
 function skillAnimation(){
   let tlForSkills = gsap.timeline({
     scrollTrigger:{
       trigger: ".all-skills",
       scroller: "body",
       // markers: true,
-      start: "top 80%",
+      start: "top 70%",
       end: "top 0%",
       scrub: 2,
     }
@@ -85,3 +88,67 @@ function skillAnimation(){
   },"anim3")
 }  
 skillAnimation()
+
+// animating navbar
+function navBarAnim(){
+  gsap.from("nav .logo",{
+    y: -90,
+    opacity: 0,
+    duration: 1
+  })
+  gsap.from("nav ul li",{
+    y: -90,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2
+  })
+  gsap.from("nav button",{
+    y: -90,
+    opacity: 0,
+    duration: 1,
+  
+  })
+}
+navBarAnim()
+
+// Select all .certi elements
+
+function certiAnim(){
+
+  let certiDivs = document.querySelectorAll('.certi');
+  
+  certiDivs.forEach(certi => {
+    certi.addEventListener("mouseenter", () => {
+      gsap.to(certi.querySelector(".screen1"), {
+        height: 0,
+        duration: 0.4
+      });
+    });
+  
+    certi.addEventListener("mouseleave", () => {
+      gsap.to(certi.querySelector(".screen1"), {
+        height: "14rem",
+        duration: 0.4,
+        
+      });
+    });
+  });
+  
+  let tlForSkills = gsap.timeline({
+      scrollTrigger:{
+        trigger: ".all-certificates",
+        scroller: "body",
+        // markers: true,
+        start: "top 70%",
+        end: "top 0%",
+        scrub: 2,
+      }
+    })
+  
+  tlForSkills.from(".certi",{
+    opacity: 0,
+    duaration: 0.7,
+    stagger: 0.2
+  })
+}  
+certiAnim()

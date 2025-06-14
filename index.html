@@ -5,11 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chai portfolio</title>
+  <link rel="shortcut icon" href="images/logo 1.svg" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -27,7 +25,7 @@
         <li>Resume </li>
       </ul>
       <div class="lets-talk">
-        <button>Lets's Talk</button>
+        <button><a href="contact.html" target="_blank">Lets's Talk</a></button>
       </div>
     </nav>
   </header>
@@ -49,7 +47,7 @@
             TryHackMe and Hack The Box. My goal is to help build secure and trusted systems while learning something new
             every day.
           </p>
-          <button><a href="">My Rasume</a></button>
+          <button class="resume"><a href="">My Rasume</a></button>
         </div>
       </div>
     </div>
@@ -73,21 +71,89 @@
       </div>
       <div class="skill skill3">
         <h2> <i class="ri-shield-keyhole-line"></i> John the Ripper</h2>
-        <p>Experienced in using John the Ripper for password cracking and security testing, leveraging its powerful hash cracking abilities.</p>
+        <p>Experienced in using John the Ripper for password cracking and security testing, leveraging its powerful hash
+          cracking abilities.</p>
       </div>
       <div class="skill skill4">
         <h2> <i class="ri-hashtag"></i> Hashcat</h2>
-        <p>I use Hashcat to perform fast and advanced password recovery and hash cracking, supporting a wide range of algorithms and hash types.</p>
+        <p>I use Hashcat to perform fast and advanced password recovery and hash cracking, supporting a wide range of
+          algorithms and hash types.</p>
       </div>
       <div class="skill skill5">
         <h2> <i class="ri-global-line"></i> Nmap</h2>
-        <p>Proficient in Nmap for network scanning and mapping. I can detect open ports, services, and potential vulnerabilities in systems.</p>
+        <p>Proficient in Nmap for network scanning and mapping. I can detect open ports, services, and potential
+          vulnerabilities in systems.</p>
       </div>
       <div class="skill skill6">
         <h2> <i class="ri-wifi-line"></i> Wireshark</h2>
-        <p>Skilled in analyzing network traffic with Wireshark to monitor, troubleshoot, and capture packet data for deep insights.</p>
+        <p>Skilled in analyzing network traffic with Wireshark to monitor, troubleshoot, and capture packet data for
+          deep insights.</p>
       </div>
     </div>
+  </section>
+
+  <!-- all certificates section -->
+  <section class="all-certificates">
+    <h1>My Certificates</h1>
+    <div class="underline"></div>
+    <div class="flex-certi">
+      <div class="certi certi1">
+        <a href="pdfs/cirti1.pdf" target="_blank">
+          <img src="images/certi1.png" alt="cerificate" width="370">
+          <div class="screen1 sc1"></div>
+        </a>
+      </div>
+      <div class="certi certi2">
+        <a href="pdfs/cirti2.pdf" target="_blank">
+          <img src="images/certi2.png" alt="cerificate" width="370">
+          <div class="screen1 sc2"></div>
+        </a>
+      </div>
+      <div class="certi certi3">
+        <a href="pdfs/cirti3.pdf" target="_blank">
+          <img src="images/certi3.png" alt="cerificate" width="370">
+          <div class="screen1 sc3"></div>
+        </a>
+      </div>
+      <div class="certi certi4">
+        <a href="pdfs/cirti4.pdf" target="_blank">
+          <img src="images/certi4.png" alt="cerificate" width="370">
+          <div class="screen1 sc4"></div>
+        </a>
+      </div>
+      <div class="certi certi5">
+        <a href="pdfs/cirti5.pdf" target="_blank">
+          <img src="images/certi5.png" alt="cerificate" width="370">
+          <div class="screen1 sc5">
+            </di>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- contact secction -->
+  <section class="contact">
+    <h1>My Certificates</h1>
+    <div class="underline"></div>
+    <div class="inner-cont">
+
+      <form action="">
+        <div class="first-last-names">
+          <input type="text" name="firstName" placeholder="Enter your first name" required>
+          <input type="text" name="lastName" placeholder="Enter your Last name" required>
+        </div>
+        <div class="email-phone">
+          <input type="email" name="email" placeholder="Enter your email" required>
+          <input type="number" name="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="message">
+          <textarea name="msg" id="msg"></textarea>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+
   </section>
 
 
@@ -96,7 +162,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
     integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+    integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="app.js"></script>
 </body>
 
