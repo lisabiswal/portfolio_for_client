@@ -1,3 +1,8 @@
+document.addEventListener("contextmenu",(e)=>{
+  e.preventDefault()
+  alert("Right-click is disabled on this portfolio.");
+},false)
+
 // splitting the words
 function splitWords(){
   let h1 = document.querySelector(".h1")

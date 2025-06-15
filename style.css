@@ -108,7 +108,7 @@ main .inner-cont{
   width: 85%;
   height: 100%;
   margin: 0 auto;
-  gap: 9rem;
+  gap: 5rem;
 }
 main .inner-cont .left-cont{
   width: 190rem;
@@ -125,7 +125,7 @@ main .inner-cont .right-cont p{
   font-size: 20px;
   line-height: 1.7rem;
   position: relative;
-  color: var(--landing-page-para);
+  color: #55df93e9;
 
 }
 main .hero-img .overlay{

@@ -1,3 +1,7 @@
+document.addEventListener("contextmenu",(e)=>{
+  e.preventDefault()
+  alert("Right-click is disabled on this portfolio.");
+},false)
 // animating the form section
 
 let tl = gsap.timeline();
@@ -13,3 +17,4 @@ tl.from("form div", {
   opacity: 0,
   duration: 1
 }, "-=0.5"); 
+
