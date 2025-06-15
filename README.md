@@ -22,7 +22,7 @@ A portfolio website designed and developed for a client to showcase their skills
    ```
 2. Open the folder:
    ```bash
-   cd client-portfolio
+   cd portfolio_for_client
    ```
 3. Open `index.html` in your browser.
 
