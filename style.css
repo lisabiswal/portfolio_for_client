@@ -88,7 +88,7 @@ header nav ul li:hover::after{
 
 /* styling the hero section */
 main  .hero-img{
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   background-image: url(images/hero-logo.jpg);
   background-size: cover;
