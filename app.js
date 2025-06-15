@@ -158,6 +158,6 @@ function certiAnim(){
 }  
 certiAnim()
 
-// animating the form section
+
 
 
